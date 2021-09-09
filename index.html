@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Star-Devs</title>
     <link rel="stylesheet" href="./css/styles.css">
-    <script src="./js/index.js"></script>
+    <script src="./js/index.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,7 +29,7 @@
             <div class="card-container">
                   <div class="card-main">
                      <span>Naves Estelares</span>
-                     <h2 id="starchips">Carregando...</h2>
+                     <h2 id="starships">Carregando...</h2>
                  </div>
                 <img src="./img/starship.svg" alt="Imagem Naves Estelares">
             </div>
@@ -42,7 +42,7 @@
             </div>
         </section>
         <section class="phrases-container">
-            <button id="btn-phrase">Ler uma frase!</button>
+            <button id="btn-phrase" onclick="loadPhrase()">Ler uma frase!</button>
             <p id="phrase"></p>
         </section>
     </main>
