@@ -36,7 +36,14 @@ function loadPhrase() {
         .then(json => {
             console.log(json)
             btn.innerHTML = 'Ver mais uma frase!';
-            phrase.innerHTML = ``
+            phrase.innerHTML = `"${json.content}"`;
+
+            phrase.animate([
+                {transform: 'translateY(-70px)'},
+                {transform: 'translateY(0px)'}
+            ], {
+                duration: 500
+            })
         })
         .catch(err => console.log('Erro: ', err))
-}
+};
